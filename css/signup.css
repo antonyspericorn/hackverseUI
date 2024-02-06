@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+.signup-cover {
+  padding: 15px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-block-outer {
+  width: 100%;
+  max-width: 400px;
+  padding-top: 10vh;
+}
+.signup-block-outer .logo-block {
+  text-align: center;
+  margin-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .signup-block-outer .logo-block {
+    margin-bottom: 40px;
+  }
+}
+.signup-block-outer .form-block-outer {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  padding: 30px 25px;
+  background-color: #0C090A;
+  box-shadow: 0px 4px 120px 0px #000000;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 0.5px solid;
+}
+.signup-block-outer .form-block-outer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.5px;
+  margin: auto;
+  width: 65%;
+  height: 1px;
+  background: radial-gradient(75.77% 2198877.69% at 50% 49.82%, #A0FF00 0%, rgba(160, 255, 0, 0) 100%);
+}
+.signup-block-outer .form-block-outer .full-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.signup-block-outer .form-block-outer .full-logo .f-logo {
+  display: inline-block;
+  outline: none;
+}
+.signup-block-outer .form-block-outer .full-logo .f-logo img {
+  max-height: 30px;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .warning-msg {
+  margin-top: 10px;
+  color: rgb(255, 59, 59);
+  font-size: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .warning-msg img {
+  margin-right: 8px;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .inp-block {
+  margin-bottom: 25px;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-input-group {
+  border: 0.5px solid rgba(220, 214, 247, 0.1019607843);
+  background: linear-gradient(0deg, rgba(220, 214, 247, 0.1), rgba(220, 214, 247, 0.1)), linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
+  border-radius: 4px;
+  background-color: transparent;
+  background: rgba(255, 255, 255, 0.02);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-input-group ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-input-group :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-input-group ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-input-group :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-input-group .input-group-text {
+  background-color: transparent;
+  border: none;
+  padding-right: 0;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-input-group .form-control {
+  background-color: transparent;
+  color: #fff;
+  padding: 11px 15px;
+  box-shadow: none;
+  border: none;
+  font-size: 14px;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-input-group:focus-within {
+  border: 0.5px solid rgba(220, 214, 247, 0.3);
+  background: #161314;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-inp-block ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-inp-block :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-inp-block ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-inp-block :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-inp-block .form-control {
+  border: 0.5px solid rgba(220, 214, 247, 0.1019607843);
+  background: linear-gradient(0deg, rgba(220, 214, 247, 0.1), rgba(220, 214, 247, 0.1)), linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
+  border-radius: 4px;
+  background-color: transparent;
+  background: rgba(255, 255, 255, 0.02);
+  color: #fff;
+  padding: 11px 15px;
+  box-shadow: none;
+  font-size: 14px;
+  outline: none;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block .custom-inp-block .form-control:focus {
+  border: 0.5px solid rgba(220, 214, 247, 0.3);
+  background: #161314;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block.singin-inp-block .inp-block {
+  margin-bottom: 18px;
+}
+.signup-block-outer .form-block-outer .form-cover .singup-inp-block.singin-inp-block .warning-msg {
+  margin-top: 3px;
+}
+.signup-block-outer .form-block-outer .form-cover .form-btn {
+  width: 100%;
+  background-color: #A0FF00;
+  padding: 11px 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+.signup-block-outer .form-block-outer .form-cover .sign-txt-block {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #fff;
+}
+.signup-block-outer .form-block-outer .form-cover .sign-txt-block .signin-link {
+  color: #A0FF00;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.signup-block-outer .form-block-outer .form-cover .sign-txt-block .signin-link:hover {
+  opacity: 0.8;
+}
+
+.glow-on-hover {
+  position: relative;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.btn1 {
+  text-decoration: none;
+  transition: 0.75s;
+}
+.btn1:hover {
+  box-shadow: 0px 0px 0px 2.5px #000, 0px 0px 0px 5px #A0FF00, 0px 0px 0px 10px #000, 0px 0px 0px 10.5px #A0FF00;
+  background: #000 !important;
+  color: #A0FF00 !important;
+}

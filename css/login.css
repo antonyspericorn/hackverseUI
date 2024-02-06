@@ -125,6 +125,17 @@
   text-align: left;
   color: #FF3B3B;
   margin-top: 15px;
+  padding-left: 38px;
+  position: relative;
+}
+.login-wrp .floating-wrp .login-area .error::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(../img/info-circle.svg) no-repeat center;
+  position: absolute;
+  left: 12px;
+  top: 0px;
 }
 .login-wrp .floating-wrp .login-area .forget-blk {
   display: flex;

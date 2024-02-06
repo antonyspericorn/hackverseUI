@@ -15,6 +15,21 @@
   background: url("../img/black-mesh-radius.png") no-repeat top center #000;
   padding-top: 146px;
 }
+@media (max-width: 1679px) {
+  .login-wrp {
+    padding-top: 136px;
+  }
+}
+@media (max-width: 1481px) {
+  .login-wrp {
+    padding-top: 126px;
+  }
+}
+@media (max-width: 1481px) {
+  .login-wrp {
+    padding-top: 126px;
+  }
+}
 .login-wrp .floating-wrp {
   max-width: 400px;
   margin: 0 auto;

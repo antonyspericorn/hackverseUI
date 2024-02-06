@@ -31,6 +31,21 @@
 .login-wrp .floating-wrp .brand-hanger {
   margin-bottom: 70px;
 }
+@media (max-width: 1679px) {
+  .login-wrp .floating-wrp .brand-hanger {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1481px) {
+  .login-wrp .floating-wrp .brand-hanger {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1281px) {
+  .login-wrp .floating-wrp .brand-hanger {
+    margin-bottom: 40px;
+  }
+}
 .login-wrp .floating-wrp .login-area {
   width: 100%;
   padding: 30px;
@@ -59,6 +74,10 @@
 .login-wrp .floating-wrp .login-area .brand img {
   max-height: 24px;
 }
+.login-wrp .floating-wrp .login-area .form-wrp {
+  position: relative;
+  margin-bottom: 16px;
+}
 .login-wrp .floating-wrp .login-area .form-wrp .form-control {
   width: 100%;
   height: 40px;
@@ -72,7 +91,40 @@
   letter-spacing: 0px;
   text-align: left;
   border: 0.5px solid rgba(220, 214, 247, 0.1019607843);
-  margin-bottom: 16px;
+  color: #ccc;
+  padding-left: 37px;
+}
+.login-wrp .floating-wrp .login-area .form-wrp .form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgba(160, 255, 0, 0.5);
+}
+.login-wrp .floating-wrp .login-area .form-wrp.usr::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  background: url(../img/profile-circle.svg) no-repeat center;
+}
+.login-wrp .floating-wrp .login-area .form-wrp.pwd::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  background: url(../img/lock.svg) no-repeat center;
+  opacity: 0.5;
+}
+.login-wrp .floating-wrp .login-area .error {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #FF3B3B;
+  margin-top: 15px;
 }
 .login-wrp .floating-wrp .login-area .forget-blk {
   display: flex;

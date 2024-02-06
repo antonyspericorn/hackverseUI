@@ -1,4 +1,4 @@
-
+@import "partials/partials";
 .login-wrp{
     width: 100%;
     height: 100vh;
@@ -11,6 +11,9 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        @media ($sm-479){
+            max-width: 90%;
+        }
         .brand-hanger{
             margin-bottom: 70px;
         }

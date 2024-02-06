@@ -1,0 +1,161 @@
+
+@import "partials/partials";
+.dashboard-body{
+    min-height: 100vh;
+    position: relative;
+    & > * {
+        position: relative;
+        z-index: 2;
+    }
+    .body-bg{
+        position: absolute;
+        inset: 0;
+        opacity: 0.2;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.dashboard-header{
+    padding: 16px 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    .links-col{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        .nav-link{
+            padding-top: 0;
+            padding-bottom: 0;
+            &.dropdown-toggle::after{display: none;}
+
+            &.user-drop{
+
+            }
+        }
+        li{
+            
+            color: #ffffff;
+            &.nav-item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            a{
+                color: #ffffff;
+                &.user-drop{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 40px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                }
+            }
+            
+        }
+
+        .dropdown-menu{
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(7, 8, 5, 1);
+            li{
+                padding-left: 0;
+                padding-right: 0;
+                .dropdown-divider{
+                    border-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+
+            .dropdown-item{
+                display: flex;
+                align-items: center;
+                padding: 10px 30px;
+                 color: #ffffff;
+                 cursor: pointer;
+                 &:hover{
+                    background-color: transparent;
+                    color: #ffffffcb;
+                 }
+                .img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 40px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                }
+
+                .name,.txt{
+                    margin-left: 20px;
+                }
+
+                .logout{
+                    color: rgba(255, 59, 59, 1);
+                }
+            }
+        }
+    }
+
+    .actn-col{
+        display: flex;
+        .navbar-nav{
+            margin-left: auto;
+        }
+    }
+}
+
+.dashboard-sidebar{
+    border-right: 1px solid rgba(255,255,255,.2);
+    position: fixed;
+    top: 75px;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(12, 9, 10, 0.4);
+    .menu-btn-wrp{
+        height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+        .btn-menu{
+            outline: none;
+            border: none;
+        }
+    }
+    &.collapsed{
+        width: 70px;
+    }
+
+    .users-wrp{
+        display: flex;
+        padding: 30px 18px;
+        .usersLinks{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                & + li{
+                    margin-top: 30px;
+                }
+            }
+            img{
+                width: 34px;
+                height: 34px;
+                object-fit: contain;
+                border-radius: 40px;
+            }
+        }
+    }
+}

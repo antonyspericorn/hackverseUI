@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackverse Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/live-stream.css">
 </head>
 <body class="dashboard-body">
     <div class="body-bg">
@@ -154,6 +155,468 @@
             </ul>
         </div>
     </div>
-</body>
+    <div class="content-outer">
+        <section class="live-stream">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="box-inner">
+                    <div class="title-sec"><h1 class="main-title">Live streams we think you'll like</h1></div>
+               
+                <div class="three-col-sec mob-slider">
+                    <div class="box">
+                        <div class="live-video black-box1">
+                            <div class="video-top">
+                                <div class="live"><span class="status"></span><span class="sub-title">Live</span></div>
+                                <div class="watch-count live"><span class="eye-img"><img src="img/eye.png" alt="eye"></span> <span class="ppl-count sub-title">20.k</span></div>
+                            </div>
+                            
+                            <div class="play-button"><a href="#" class="play-video"><img src="img/video-circle.png" alt="video-circle"></a></div>
+                            <video class="video" style="display: none;" controls>
+                                <source src="path/to/your/video4.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-details">
+                            <div class="video-name title">CyberGuard Pro, Advanced Threat Detection</div>
+                            <div class="owner-name"><span class="owner-img"><img src="img/youtuber.png" alt="youtuber"></span><span class="sub-title">Kianna Culhane</span></div>
+                            <div class="tags">
+                                <a href="" class="tag-item sub-title">CyberSecurity</a>
+                                <a href="" class="tag-item sub-title">InfoSec</a>
+                                <a href="" class="tag-item sub-title">DataProtect</a>
+                                <a href="" class="tag-item sub-title">Resilience</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="live-video black-box1">
+                            <div class="video-top">
+                                <div class="live"><span class="status"></span><span class="sub-title">Live</span></div>
+                                <div class="watch-count live"><span class="eye-img"><img src="img/eye.png" alt="eye"></span> <span class="ppl-count sub-title">20.k</span></div>
+                            </div>
+                            
+                            <div class="play-button"><a href="#" class="play-video"><img src="img/video-circle.png" alt="video-circle"></a></div>
+                        <video class="video" style="display: none;" controls>
+                            <source src="path/to/your/video4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        </div>
+                        <div class="video-details">
+                            <div class="video-name title">CyberGuard Pro, Advanced Threat Detection</div>
+                            <div class="owner-name"><span class="owner-img"><img src="img/youtuber.png" alt="youtuber"></span><span class="sub-title">Kianna Culhane</span></div>
+                            <div class="tags">
+                                <a href="" class="tag-item sub-title">CyberSecurity</a>
+                                <a href="" class="tag-item sub-title">InfoSec</a>
+                                <a href="" class="tag-item sub-title">DataProtect</a>
+                                <a href="" class="tag-item sub-title">Resilience</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="live-video black-box1">
+                            <div class="video-top">
+                                <div class="live"><span class="status"></span><span class="sub-title">Live</span></div>
+                                <div class="watch-count live"><span class="eye-img"><img src="img/eye.png" alt="eye"></span> <span class="ppl-count sub-title">20.k</span></div>
+                            </div>
+                            
+                            <div class="play-button"><a href="#" class="play-video"><img src="img/video-circle.png" alt="video-circle"></a></div>
+                            <video class="video" style="display: none;" controls>
+                                <source src="path/to/your/video4.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-details">
+                            <div class="video-name title">CyberGuard Pro, Advanced Threat Detection</div>
+                            <div class="owner-name"><span class="owner-img"><img src="img/youtuber.png" alt="youtuber"></span><span class="sub-title"> Kianna Culhane</span></div>
+                            <div class="tags">
+                                <a href="" class="tag-item sub-title">CyberSecurity</a>
+                                <a href="" class="tag-item sub-title">InfoSec</a>
+                                <a href="" class="tag-item sub-title">DataProtect</a>
+                                <a href="" class="tag-item sub-title">Resilience</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                             
+                </div>
+
+                <div class="show-more">
+                   
+                    <div class="lines"></div>
+                    <div><a href="" class="btn-show sub-title"><span>Show more</span><span><img src="img/arrow-down.png" alt="arrow" class="dwn-arrow"></span></a></div>
+                    
+                    <div class="lines"></div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </section>
+
+    <section class="demos">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="title-sec main-title">
+                    Demos for Disruption
+                </div>
+                <div class="box-sec mob-slider1">
+                    <div class="inner-box-sec">
+                        <div class="logo1"><img src="img/Logo1.png" alt="logo"></div>
+                        <div class="title">PROCYON</div>
+                        <div class="title">
+                            Cloud Access Managment
+                        </div>
+                        <div class="aws-img"><img src="img/aws.png" alt="aws-img"></div>
+                        <div class="strat-demo"><a href="" class="demo-btn sub-title"><span class="text">Start Demo</span><span><img src="img/arrow-right.svg" alt="arrow-right" class="arrow-desk"></span> <span class="arrow-mob"><img src="img/arrow-right-g.svg" alt="arrow-right" class="arrow-mob"></span></a></div>
+                    </div>
+                    <div class="inner-box-sec">
+                        <div class="logo1"><img src="img/Logo1.png" alt="logo"></div>
+                        <div class="title">PROCYON</div>
+                        <div class="title">
+                            Cloud Access Managment
+                        </div>
+                        <div class="aws-img"><img src="img/aws.png" alt="aws-img"></div>
+                        <div class="strat-demo"><a href="" class="demo-btn sub-title"><span class="text">Start Demo</span><span><img src="img/arrow-right.svg" alt="arrow-right" class="arrow-desk"></span> <span class="arrow-mob"><img src="img/arrow-right-g.svg" alt="arrow-right" class="arrow-mob"></span></a></div>
+                    </div>
+                    <div class="inner-box-sec">
+                        <div class="logo1"><img src="img/Logo1.png" alt="logo"></div>
+                        <div class="title">PROCYON</div>
+                        <div class="title">
+                            Cloud Access Managment
+                        </div>
+                        <div class="aws-img"><img src="img/aws.png" alt="aws-img"></div>
+                        <div class="strat-demo"><a href="" class="demo-btn sub-title"><span class="text">Start Demo</span><span><img src="img/arrow-right.svg" alt="arrow-right" class="arrow-desk"></span> <span class="arrow-mob"><img src="img/arrow-right-g.svg" alt="arrow-right" class="arrow-mob"></span></a></div>
+                    </div>
+                    <div class="inner-box-sec">
+                        <div class="logo1"><img src="img/Logo1.png" alt="logo"></div>
+                        <div class="title">PROCYON</div>
+                        <div class="title">
+                            Cloud Access Managment
+                        </div>
+                        <div class="aws-img"><img src="img/aws.png" alt="aws-img"></div>
+                        <div class="strat-demo"><a href="" class="demo-btn sub-title"><span class="text">Start Demo</span><span><img src="img/arrow-right.svg" alt="arrow-right" class="arrow-desk"></span> <span class="arrow-mob"><img src="img/arrow-right-g.svg" alt="arrow-right" class="arrow-mob"></span></a></div>
+                    </div>
+                    <div class="inner-box-sec">
+                        <div class="logo1"><img src="img/Logo1.png" alt="logo"></div>
+                        <div class="title">PROCYON</div>
+                        <div class="title">
+                            Cloud Access Managment
+                        </div>
+                        <div class="aws-img"><img src="img/aws.png" alt="aws-img"></div>
+                        <div class="strat-demo"><a href="" class="demo-btn sub-title"><span class="text">Start Demo</span><span><img src="img/arrow-right.svg" alt="arrow-right" class="arrow-desk"></span> <span class="arrow-mob"><img src="img/arrow-right-g.svg" alt="arrow-right" class="arrow-mob"></span></a></div>
+                    </div>
+                    <div class="inner-box-sec">
+                        <div class="logo1"><img src="img/Logo1.png" alt="logo"></div>
+                        <div class="title">PROCYON</div>
+                        <div class="title">
+                            Cloud Access Managment
+                        </div>
+                        <div class="aws-img"><img src="img/aws.png" alt="aws-img"></div>
+                        <div class="strat-demo"><a href="" class="demo-btn sub-title"><span class="text">Start Demo</span><span><img src="img/arrow-right.svg" alt="arrow-right" class="arrow-desk"></span> <span class="arrow-mob"><img src="img/arrow-right-g.svg" alt="arrow-right" class="arrow-mob"></span></a></div>
+                    </div>
+                </div>
+                <div class="show-more">
+                   
+                    <div class="lines"></div>
+                    <div><a href="" class="btn-show sub-title"><span>Show more</span><span><img src="img/arrow-down.png" alt="arrow" class="dwn-arrow"></span></a></div>
+                    
+                    <div class="lines"></div>
+                </div>
+            </div>
+        </div>
+      
+        
+    </section>
+    <section class="featured-stream">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="title-sec main-title">
+                    Featured Streams
+                </div>
+                <div class="four-col mob-slider1">
+                    <div class="black-box black-box1">
+                        <div class="video-name title">CyberGuard Pro, Advanced Threat Detection</div>
+                        <div class="owner-name">
+                            <span class="owner-img"><img src="img/youtuber.png" alt="youtuber"></span>
+                            <span class="sub-title"> Kianna Culhane</span>
+                        </div>
+                        <div class="play-button"><a href="#" class="play-video"><img src="img/video-circle.png" alt="video-circle"></a></div>
+                        <video class="video" style="display: none;" controls>
+                            <source src="path/to/your/video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="black-box black-box1">
+                        <div class="video-name title">CyberGuard Pro, Advanced Threat Detection</div>
+                        <div class="owner-name">
+                            <span class="owner-img"><img src="img/youtuber.png" alt="youtuber"></span>
+                            <span class="sub-title"> Kianna Culhane</span>
+                        </div>
+                        <div class="play-button"><a href="#" class="play-video"><img src="img/video-circle.png" alt="video-circle"></a></div>
+                        <video class="video" style="display: none;" controls>
+                            <source src="path/to/your/video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="black-box black-box1">
+                        <div class="video-name title">CyberGuard Pro, Advanced Threat Detection</div>
+                        <div class="owner-name">
+                            <span class="owner-img"><img src="img/youtuber.png" alt="youtuber"></span>
+                            <span class="sub-title"> Kianna Culhane</span>
+                        </div>
+                        <div class="play-button"><a href="#" class="play-video"><img src="img/video-circle.png" alt="video-circle"></a></div>
+                        <video class="video" style="display: none;" controls>
+                            <source src="path/to/your/video3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="black-box black-box1">
+                        <div class="video-name title">CyberGuard Pro, Advanced Threat Detection</div>
+                        <div class="owner-name">
+                            <span class="owner-img"><img src="img/youtuber.png" alt="youtuber"></span>
+                            <span class="sub-title"> Kianna Culhane</span>
+                        </div>
+                        <div class="play-button"><a href="#" class="play-video"><img src="img/video-circle.png" alt="video-circle"></a></div>
+                        <video class="video" style="display: none;" controls>
+                            <source src="path/to/your/video4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+             
+
+                <div class="show-more">
+               
+                    <div class="lines"></div>
+                    <div><a href="" class="btn-show sub-title"><span>Show more</span><span><img src="img/arrow-down.png" alt="arrow" class="dwn-arrow"></span></a></div>
+                    
+                    <div class="lines"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+     $(document).ready(function() {
+          // Function to initialize the slider with specific settings
+          function initSlider() {
+            return $('.mob-slider').slick({
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              autoplay: false,
+              dots:true,
+              autoplaySpeed: 2000,
+            //   variableWidth: true,
+              responsive: [
+              {
+                  breakpoint:479,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    dots:true,
+                    arrows: false,
+                  }
+                },
+                {
+                  breakpoint: 767,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    dots:true,
+                    arrows: false,
+                  }
+                },
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    dots:true,
+                    arrows: false,
+                  }
+                },
+                {
+                  breakpoint: 1281,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                
+                    arrows: false,
+                  }
+                },
+                {
+                  breakpoint: 9999,
+                  settings: "unslick"
+                },
+              ]
+            });
+          }
+
+          
+      
+          // Initialize the slider
+          var slider = initSlider();
+      
+          // Reinitialize the slider on window resize
+          $(window).on('resize', function() {
+            var windowWidth = $(window).width();
+      
+            if (windowWidth >= 991) {
+              // If the slider is initialized, destroy it
+              if (slider.hasClass('slick-initialized')) {
+                slider.slick('unslick');
+              }
+            } else {
+              // If the slider is not initialized, initialize it with the specific settings
+              if (!slider.hasClass('slick-initialized')) {
+                slider = initSlider();
+              }
+            }
+          });
+
+
+          
+        });
+          </script>
+
+
+<script>
+    $(document).ready(function() {
+         // Function to initialize the slider with specific settings
+         function initSlider() {
+           return $('.mob-slider1').slick({
+             slidesToShow: 5,
+             slidesToScroll: 1,
+             autoplay: false,
+             dots:false,
+             autoplaySpeed: 2000,
+           //   variableWidth: true,
+             responsive: [
+             {
+                 breakpoint:479,
+                 settings: {
+                   slidesToShow: 1,
+                   slidesToScroll: 1,
+                   infinite: true,
+                   autoplay: true,
+               
+                   arrows: false,
+                 }
+               },
+               {
+                 breakpoint: 767,
+                 settings: {
+                   slidesToShow: 1,
+                   slidesToScroll: 1,
+                   infinite: true,
+                   autoplay: true,
+                
+                   arrows: false,
+                 }
+               },
+               {
+                 breakpoint: 991,
+                 settings: {
+                   slidesToShow: 2,
+                   slidesToScroll: 1,
+                   infinite: true,
+                   autoplay: true,
+               
+                   arrows: false,
+                 }
+               },
+               {
+                  breakpoint: 1281,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+               
+                    arrows: false,
+                  }
+                },
+               {
+                 breakpoint: 9999,
+                 settings: "unslick"
+               },
+             ]
+           });
+         }
+
+         
+     
+         // Initialize the slider
+         var slider = initSlider();
+     
+         // Reinitialize the slider on window resize
+         $(window).on('resize', function() {
+           var windowWidth = $(window).width();
+     
+           if (windowWidth >= 991) {
+             // If the slider is initialized, destroy it
+             if (slider.hasClass('slick-initialized')) {
+               slider.slick('unslick');
+             }
+           } else {
+             // If the slider is not initialized, initialize it with the specific settings
+             if (!slider.hasClass('slick-initialized')) {
+               slider = initSlider();
+             }
+           }
+         });
+
+
+         
+       });
+         </script>
+         <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    var playButtons = document.querySelectorAll(".play-video");
+
+    playButtons.forEach(function(playButton) {
+        playButton.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            // Find the corresponding video element
+            var video = this.closest(".black-box1").querySelector(".video");
+
+            // Show the video
+            video.style.display = "block";
+
+            // Play the video
+            video.play();
+
+            // Pause other videos if any
+            pauseOtherVideos(video);
+        });
+    });
+
+    // Function to pause other videos
+    function pauseOtherVideos(currentVideo) {
+        var allVideos = document.querySelectorAll(".video");
+        allVideos.forEach(function(video) {
+            if (video !== currentVideo && !video.paused) {
+                video.pause();
+            }
+        });
+    }
+});
+
+
+
+         </script>
+</body>
+
 </html>

@@ -120,6 +120,10 @@
                 &:first-child{
                     margin-left: 0px;
                 }
+                &.error{
+                    border-color: #FF3B3B;
+                    margin-top: 0;
+                }
             }
         }
         .error{

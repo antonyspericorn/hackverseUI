@@ -154,6 +154,10 @@
 .e-verification-wrp .verification-outer .input-wrp .otp-input:first-child {
   margin-left: 0px;
 }
+.e-verification-wrp .verification-outer .input-wrp .otp-input.error {
+  border-color: #FF3B3B;
+  margin-top: 0;
+}
 .e-verification-wrp .verification-outer .error {
   font-family: "Roboto", sans-serif;
   font-size: 12px;

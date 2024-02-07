@@ -50,7 +50,9 @@
             width: 100%;
             padding: 30px;
             background: linear-gradient(0deg, #0C090A, #0C090A),linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-            border: 0.5px solid linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+            border: 0.5px solid rgba(220, 214, 247, 0.1019607843);
+
+
             box-shadow: 0px 4px 80px 0px #000000;
             border-radius: 8px;
             position: relative;
@@ -59,8 +61,8 @@
                 background: radial-gradient(75.77% 2198877.69% at 50% 49.82%, #A0FF00 0%, rgba(160, 255, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
                 position: absolute;
                 height: 1px;
-                width: 252px;
-                top: 0px;
+                width: 64%;
+                top: -0.5px;
                 left: 50%;
                 transform: translateX(-50%);
             }

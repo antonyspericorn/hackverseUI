@@ -33,7 +33,7 @@
         position: relative;
         z-index: 1;
         @media ($sm-991){
-            margin: 0 20px;
+            padding: 0 20px;
         }
         .brand-hanger{
             margin-bottom: 40px;
@@ -77,6 +77,11 @@
             text-align: center;
             margin-bottom: 30px;
             color: #DCD6F7B2;
+            br{
+                @media ($sm-991){
+                    display: none;
+                }
+            }
         }
         .input-wrp{
             max-width: 416px;
@@ -176,6 +181,87 @@
             }
             @media ($sm-991){
                 margin-top: 20px;
+            }
+        }
+        .form-wrap{
+            max-width: 340px;
+            width: 100%;
+        }
+        .inp-grp{
+            display: flex;
+            font-family: $font-primary;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0px;
+            text-align: left;
+            margin-bottom: 16px;
+            box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 1);
+            .grp-head{
+                border-radius: 4px 0 0 4px;
+                width: 44px;
+                display: flex;
+                flex-shrink: 0;
+                border: 0.5px solid #DCD6F71A;
+                background: linear-gradient(0deg, rgb(220 214 247 / 0%), rgb(220 214 247 / 0%)), linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
+                color: rgba(255,255,255,.5);
+                padding: 12px 0px 12px 14px;
+                &:focus{
+                    outline: 0;
+                    box-shadow: 0 0 0 .1rem rgba(160,255,0,.5);
+                }
+            }
+            .form-control{
+                width: 100%;
+                height: 40px;
+                border-radius: 0 4px 4px 0;
+                padding: 11px 12px;
+                background: linear-gradient(0deg, rgb(220 214 247 / 0%), rgb(220 214 247 / 0%)), linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));;
+                font-family: $font-primary;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0px;
+                text-align: left;
+                border: 0.5px solid #DCD6F71A;
+                color: rgba(255,255,255,.5);
+                padding-left: 14px;
+                border-left: none;
+                &:focus{
+                    outline: 0;
+                    box-shadow: 0 0 0 .1rem rgba(160,255,0,.5);
+                }
+                &::-webkit-input-placeholder{
+                    color: rgba(255, 255, 255, 0.12);
+                }
+                &::-moz-input-placeholder{
+                    color: rgba(255, 255, 255, 0.12);
+                }
+            }
+        }
+        .btn-login{
+            background-color: #A0FF00;
+            color: #000;
+            text-align: center;
+            font-family: $font-primary;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0px;
+            text-align: center;
+            display: flex;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            padding: 12px, 24px, 12px, 24px;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            transition: 0.75s;
+            &:hover{
+                box-shadow: 0px 0px 0px 2.5px #000, 0px 0px 0px 5px #A0FF00, 0px 0px 0px 10px #000, 0px 0px 0px 10.5px #A0FF00;
+                background: #000 !important;
+                color: #A0FF00 !important;
             }
         }
     }

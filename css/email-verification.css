@@ -119,3 +119,13 @@
 .e-verification-wrp .verification-outer .input-wrp .otp-input:first-child {
   margin-left: 0px;
 }
+.e-verification-wrp .verification-outer .dont-have-account {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #9C9C9C;
+  margin-top: 50px;
+}

@@ -4,6 +4,15 @@
     height: 100vh;
     background: url('../img/black-mesh-radius.png') no-repeat top center #000;
     padding-top: 146px;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: url('../img/green-radius-bg.svg') no-repeat center top;
+    }
     @media ($sm-1679){
         padding-top: 136px;
     }
@@ -20,6 +29,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        position: relative;
+        z-index: 1;
         @media ($sm-479){
             max-width: 90%;
         }

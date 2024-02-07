@@ -202,6 +202,12 @@
   align-items: center;
   justify-content: center;
   height: 40px;
+  transition: 0.75s;
+}
+.login-wrp .floating-wrp .login-area .btn-login:hover {
+  box-shadow: 0px 0px 0px 2.5px #000, 0px 0px 0px 5px #A0FF00, 0px 0px 0px 10px #000, 0px 0px 0px 10.5px #A0FF00;
+  background: #000 !important;
+  color: #A0FF00 !important;
 }
 .login-wrp .floating-wrp .login-area .dont-have-account {
   display: flex;

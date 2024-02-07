@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hackverse Dashboard</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/dashboard.css">
+      <link rel="stylesheet" href="css/live-stream.css">
+      <link rel="stylesheet" href="css/settings.css">
+      <link rel="stylesheet" href="css/signup.css">
+   </head>
+   <body class="dashboard-body">
+      <div class="body-bg">
+         <img src="img/dboard-bg.png" alt="">
+      </div>
+      <header class="dashboard-header">
+         <div class="container-fluid">
+            <div class="row align-items-center">
+               <div class="col logo-col">
+                  <a href="#">
+                  <img src="img/logo.svg" alt="logo">
+                  </a>
+               </div>
+               <div class="col links-col">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">Live demos</li>
+                     <li class="nav-item">Demos for Disruption</li>
+                  </ul>
+               </div>
+               <div class="col actn-col">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <img src="img/3dots.svg" alt="opt">
+                     </li>
+                     <li class="nav-item">
+                        <img src="img/message.svg" alt="msg">
+                        </li class="nav-item">
+                     <li class="nav-item dropdown">
+                        <img src="img/notification.svg" alt="notif">
+                        </li class="nav-item">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle user-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/profile.svg" alt="prof">
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <div class="dropdown-item">
+                                 <span class="img"><img src="img/profile.svg" alt="profile"></span>
+                                 <span class="name">Shawn Kelky</span>
+                              </div>
+                           </li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#"> 
+                              <span class="ico"><img src="img/channels.svg" alt="Channels"></span>
+                              <span class="txt">Channels</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <span class="ico"><img src="img/lock.svg" alt="Privacy"></span>
+                              <span class="txt">Privacy Center</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <span class="ico"><img src="img/safety.svg" alt="Safety"></span>
+                              <span class="txt">Safety</span>
+                              </a>
+                           </li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#"> 
+                              <span class="ico"><img src="img/subscriptions.svg" alt="subscriptions"></span>
+                              <span class="txt">Subscriptions</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#"> 
+                              <span class="ico"><img src="img/wallet.svg" alt="Wallet"></span>
+                              <span class="txt">Wallet</span>
+                              </a>
+                           </li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#"> 
+                              <span class="ico"><img src="img/setting.svg" alt="settings"></span>
+                              <span class="txt">Settings</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#"> 
+                              <span class="ico"><img src="img/dark-toggle.svg" alt="dark"></span>
+                              <span class="txt">Dark theme</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#"> 
+                              <span class="ico"><img src="img/logout.svg" alt="logout"></span>
+                              <span class="txt logout">Logout</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="content-outer1">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="main-title">Settings</div>
+               <div class="tabs">
+                  <ul class="tab-links">
+                     <li class="active"><a href="#profile-tab">Profile</a></li>
+                     <li><a href="#privay">Privacy center</a></li>
+                     <li><a href="#subscription-tab">Subscription</a></li>
+                     <li><a href="#notification">Notifications</a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div id="profile-tab" class="tab active">
+                        <div class="profile-inner">
+                           <div class="left-sec">
+                            <div class="main-title">Profile Settings</div>
+                            <div class="profile-picture">
+                                <label for="profile-picture-upload" class="picture-upload">
+                                    <span class="profile-pic"><img src="img/profile.png" alt="Profile Picture"></span>
+                                    <input type="file" id="profile-picture-upload" accept="image/png, image/jpeg, image/gif" style="display: none;">
+                                </label>
+                                <div class="description">
+                                    <div class="title">Add Profile Picture</div>
+                                    <div class="title">Must be JPEG, PNG, or GIF and cannot exceed 10MB.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-picture display-picture">
+                                <label for="display-picture-upload" class="display-pic">
+                                    <!-- Placeholder for the uploaded image -->
+                                    <div id="display-picture-preview" class="display-pic-placeholder"></div>
+                                    <input type="file" id="display-picture-upload" accept="image/png, image/jpeg, image/gif" style="display: none;">
+                                </label>
+                                <div class="description">
+                                    <div class="title">Add Profile Banner Picture</div>
+                                    <div class="title">File format: JPEG, PNG, GIF (recommended 1200×480, max 10MB)</div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                           <div class="right-sec">
+                            <div class="main-title">Profile Settings</div>
+                              <div class="profile-settings">
+                                 <div class="form-cover">
+                                    
+                                    <div class="singup-inp-block singin-inp-block">
+                                       <div class="inp-block">
+                                          <div class="custom-inp-block">
+                                             <label class="title">First name</label>
+                                          
+                                                <input type="text" class="form-control" id="" placeholder="Hacker">
+                                              
+                                          </div>
+                                          <span class="bottom-text">Customize capitalization for your First Name</span>
+                                             
+                                             
+                                          <!-- <div class="warning-msg">
+                                             <img src="img/info-circle.svg" alt="">
+                                             The entered email address appears to be invalid
+                                             </div> -->
+                                       </div>
+                                       <div class="inp-block">
+                                          <div class="custom-inp-block">
+                                            <label class="title">Last name</label>
+                                             <input type="text" class="form-control" id="" placeholder="Verse">
+                                          </div>
+                                          <span class="bottom-text">Customize capitalization for your Last Name</span>
+                                       </div>
+                                      
+                                       <div class="inp-block">
+                                       
+                                          <div class="custom-inp-block">
+                                            <label class="title">Hacker Alias</label>
+                                                <span class="refresh-img"><img src="img/refresh-2.png" alt="refresh"></span>
+                                                <input type="text" class="form-control" id="" placeholder="Hacker Alias (auto-suggestion)">
+                                            
+                                          </div>
+                                          <!-- <span class="bottom-text">Customize capitalization for your First Name</span> -->
+                                       </div>
+                                       <div class="inp-block">
+                                          <div class="custom-inp-block bio-textarea">
+                                            <label class="title">Bio</label>
+                                             <input type="text-area" class="form-control" id="" placeholder="Bio" >
+                                          </div>
+                                          <span class="bottom-text">Description for the About panel on your channel page in under 300 characters</span>
+                                       </div>
+                                    </div>
+                                    <div class="btn-block">
+                                       <button class="form-btn btn1">
+                                        Save Changes
+                                       </button>
+                                    </div>
+                                  
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                      <!-- privay -->
+                      <div id="privay" class="tab">
+                        Subscription Content Goes Here
+                     </div>
+
+
+                     <!-- subscription-tab -->
+                     <div id="subscription-tab" class="tab">
+                        Subscription Content Goes Here
+                     </div>
+                    
+                     <div id="notification" class="tab">
+                       <div class="notifications">
+                        <div class="title-sec">
+                            <div class="titles">Notifications</div>
+                            <div class="title">Receive relevant notifications where you prefer. We'll update you on hackerverse and your account. </div>
+                        </div>
+                        <div class="profile-inner">
+                           <div class="left-sec">
+                           
+                            <div class="profile-picture">
+                                <div class="togle-with-title">
+                                    <div class="title">Smart <br> notifications</div>
+                                    <div class="toggle-btn check-box"><input type="checkbox" id="switch" /></div>
+                                </div>
+                                <div class="description">
+                                    
+                                    <div class="subtitle title">Enable notifications to reach you wherever you are. When active on hackerverse, onsite notifications alert you when a followed channel goes live. When inactive, choose between mobile or email notifications, not both.</div>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="right-sec">
+                           
+                              <div class="profile-settings">
+                                 <div class="form-cover">
+                                    <div class="list-of-items">
+                                       <div class="list-of-item">
+                                        <div class="list-of-contents">
+                                            <div class="text-content">
+                                                <div class="live-text title">Hackerverse</div>
+                                                <div class="title">All notifications turned on</div>
+                                            </div>
+                                            <div class="dwn-arrow"><img src="img/dwn-arrow.png" alt="dwn-arrow"></div>
+                                        </div>  
+                                        <div class="list-of-contents">
+                                            <div class="text-content"> 
+                                                <span class="title"> All notifications on Hackerverse</span>
+                                            </div>
+                                            <div class="toggle-btn check-box"><input type="checkbox" id="switch" /></div>
+                                        </div> 
+                                        <div class="list-of-contents">
+                                            <div class="text-content">
+                                                <div class="live-text title">Live</div>
+                                                <div class="title"> When a channel you're tracking begins broadcasting live</div>
+                                            </div>
+                                            <div class="toggle-btn check-box"><input type="checkbox" id="switch" /></div>
+                                        </div>  
+                                        <div class="list-of-contents">
+                                            <div class="text-content">
+                                                <div class="live-text title">Collaborative Streaming Invitations</div>
+                                                <div class="title">When you receive an invitation to join someone's stream as a guest</div>
+                                            </div>
+                                            <div class="toggle-btn check-box"><input type="checkbox" id="switch" /></div>
+                                        </div> 
+                                        <div class="list-of-contents">
+                                            <div class="text-content">
+                                                <div class="live-text title">Past Broadcasts</div>
+                                                <div class="title">When a followed channel begins a rerun</div>
+                                            </div>
+                                            <div class="toggle-btn check-box"><input type="checkbox" id="switch" /></div>
+                                        </div> 
+                                        <div class="list-of-contents">
+                                            <div class="text-content">
+                                                <div class="live-text title">Events</div>
+                                                <div class="title">When a scheduled event you're following is about to commence</div>
+                                            </div>
+                                            <div class="toggle-btn check-box"><input type="checkbox" id="switch" /></div>
+                                        </div> 
+                                        <div class="list-of-contents">
+                                            <div class="text-content">
+                                                <div class="live-text title">Creator</div>
+                                                <div class="title">Messaging pertaining specifically to you as a streamer on hackerverse</div>
+                                            </div>
+                                            <div class="toggle-btn check-box"><input type="checkbox" id="switch" /></div>
+                                        </div> 
+                                        <div class="list-of-contents">
+                                            <div class="text-content">
+                                                <div class="live-text title">By Email</div>
+                                                <div class="title">All notifications turned on</div>
+                                            </div>
+                                            <div class="dwn-arrow"><img src="img/dwn-arrow.png" alt="dwn-arrow"></div>
+                                        </div> 
+                                        <div class="list-of-contents">
+                                            <div class="text-content">
+                                                <div class="live-text title">On Mobile</div>
+                                                <div class="title">All notifications turned on</div>
+                                            </div>
+                                            <div class="dwn-arrow"><img src="img/dwn-arrow.png" alt="dwn-arrow"></div>
+                                        </div> 
+                                        </div>
+                                    </div>    
+                               
+                                  
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+         $(document).ready(function(){
+         $(".tab-links a").click(function(e) {
+             e.preventDefault();
+             
+             var tabId = $(this).attr("href");
+             
+             $(".tab-links li").removeClass("active");
+             $(this).parent().addClass("active");
+             
+             $(".tab").removeClass("active");
+             $(tabId).addClass("active");
+         });
+         });
+         
+      </script>
+      <script>
+        $(document).ready(function(){
+            $("#profile-picture-upload").change(function(){
+                var input = this;
+                var url = $(this).val();
+                var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+                if (input.files && input.files[0] && (ext === "gif" || ext === "png" || ext === "jpeg" || ext === "jpg")) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('.picture-upload span img').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                } else {
+                    alert("Please select a valid image file.");
+                }
+            });
+        });
+    </script>
+    <script>
+      $(document).ready(function(){
+    $("#display-picture-upload").change(function(){
+        var input = this;
+        var file = input.files[0];
+        var ext = file.name.substring(file.name.lastIndexOf('.') + 1).toLowerCase();
+        
+        // Check file format
+        if (ext !== "gif" && ext !== "png" && ext !== "jpeg" && ext !== "jpg") {
+            alert("Please select a valid image file (JPEG, PNG, GIF).");
+            return;
+        }
+        
+        // Check file size (in bytes)
+        if (file.size > 10 * 1024 * 1024) { // 10MB
+            alert("File size exceeds the maximum limit (10MB).");
+            return;
+        }
+
+        // Read and set the image
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('#display-picture-preview').css('background-image', 'url(' + e.target.result + ')');
+        }
+        reader.readAsDataURL(file);
+    });
+});
+
+    </script>
+   </body>
+</html>

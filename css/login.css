@@ -72,6 +72,20 @@
   text-align: center;
   margin-bottom: 30px;
 }
+@media (max-width: 1679px) {
+  .login-wrp .floating-wrp .block-title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 1481px) {
+  .login-wrp .floating-wrp .block-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 .login-wrp .floating-wrp .login-area {
   width: 100%;
   padding: 30px;

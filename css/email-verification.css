@@ -310,3 +310,55 @@
   background: #000 !important;
   color: #A0FF00 !important;
 }
+.e-verification-wrp .verification-outer.two-fa .info-txt {
+  margin-bottom: 18px;
+}
+.e-verification-wrp .verification-outer .two-factor-listing {
+  max-width: 395px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.e-verification-wrp .verification-outer .two-factor-listing .auth-list {
+  background: linear-gradient(0deg, #0C090A, #0C090A), linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 80px 0px rgb(0, 0, 0);
+  padding: 16px 20px 16px 20px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+.e-verification-wrp .verification-outer .two-factor-listing .auth-list .title {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.e-verification-wrp .verification-outer .two-factor-listing .auth-list .title .icon {
+  margin-right: 8px;
+}
+.e-verification-wrp .verification-outer .two-factor-listing .auth-list .info {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(123, 123, 123);
+}
+.e-verification-wrp .verification-outer .skip-btn {
+  color: rgb(160, 255, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 12px 24px 12px 24px;
+  text-decoration: none;
+  margin-top: 40px;
+}

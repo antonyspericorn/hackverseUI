@@ -39,8 +39,63 @@
                             <img src="img/message.svg" alt="msg">
                         </li class="nav-item">
                         <li class="nav-item dropdown">
-                            <img src="img/notification.svg" alt="notif">
-                        </li class="nav-item">
+                            
+                            <a class="nav-link dropdown-toggle user-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/notification.svg" alt="notif">
+                              </a>
+                              <div class="dropdown-menu notification-menu">
+                                <div class="notifications-inner">
+                                <div class="top-head">
+                                    <div></div>
+                                    <div class="title">Notifications</div>
+                                    <div class="close-btn"><a href=""><img src="img/close.png" alt="close"></a></div>
+                                </div>
+
+                                <div class="tabs">
+                                    <ul class="tab-links">
+                                        <li class="active"><a href="#all">All</a></li>
+                                        <li><a href="#invites">Invites</a></li>
+                                        <li><a href="#Mark-read">Mark all as read</a></li>
+                                    </ul>
+                                
+                                    <div class="tab-content">
+                                        <div id="all" class="tab active">
+                                            <ul>
+                                                <li>
+                                                  <span class="dot"></span>  <span class="img-sec"><img src="img/Avatar1.png" alt="Avatar1"></span><span class="list-item">Jacob Sartorius is Live Now! Join the virtual watch .<br> <span class="time">Today at 9:42 AM</span></span><span class="three-dot"><img src="img/menu-dots-vertical.png" alt="menu-dots"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="dot"></span>  <span class="img-sec"><img src="img/Avatar2.png" alt="Avatar1"></span><span class="list-item">Jacob Sartorius is Live Now! Join the virtual watch .<br> <span class="time">Today at 9:42 AM</span></span><span class="three-dot"><img src="img/menu-dots-vertical.png" alt="menu-dots"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="dot"></span>  <span class="img-sec"><img src="img/Avatar3.png" alt="Avatar1"></span><span class="list-item">Jacob Sartorius is Live Now! Join the virtual watch .<br> <span class="time">Today at 9:42 AM</span></span><span class="three-dot"><img src="img/menu-dots-vertical.png" alt="menu-dots"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="dot"></span>  <span class="img-sec"><img src="img/Avatar3.png" alt="Avatar1"></span><span class="list-item">Jacob Sartorius is Live Now! Join the virtual watch .<br> <span class="time">Today at 9:42 AM</span></span><span class="three-dot"><img src="img/menu-dots-vertical.png" alt="menu-dots"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="invites" class="tab">
+                                            <ul>
+                                                <li>
+                                                    <span class="dot"></span>   <span class="img-sec"><img src="img/Avatar1.png" alt="Avatar1"></span><span class="list-item">Jacob Sartorius is Live Now! Join the virtual watch .<br> <span class="time">Today at 9:42 AM</span></span><span class="three-dot"><img src="img/menu-dots-vertical.png" alt="menu-dots"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="dot"></span>   <span class="img-sec"><img src="img/Avatar1.png" alt="Avatar1"></span><span class="list-item">Jacob Sartorius is Live Now! Join the virtual watch .<br> <span class="time">Today at 9:42 AM</span></span><span class="three-dot"><img src="img/menu-dots-vertical.png" alt="menu-dots"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                
+                            </div>
+                               
+                            </div>
+                              
+                        </li>
+
+
                         <li class="nav-item dropdown">
                             
 
@@ -56,38 +111,38 @@
                                     
                                </li>
 
-                                <li><hr class="dropdown-divider"></li>
+                                <li class="mob-only-items"><hr class="dropdown-divider"></li>
 
-                                <li>
+                                <li class="mob-only-items">
                                     <a class="dropdown-item" href="#"> 
                                         <span class="ico"><img src="img/channels.svg" alt="Channels"></span>
                                         <span class="txt">Channels</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="mob-only-items">
                                     <a class="dropdown-item" href="#">
                                         <span class="ico"><img src="img/lock.svg" alt="Privacy"></span>
                                         <span class="txt">Privacy Center</span>
                                     </a>
                                 </li>
                                 
-                                <li>
+                                <li class="mob-only-items">
                                     <a class="dropdown-item" href="#">
                                         <span class="ico"><img src="img/safety.svg" alt="Safety"></span>
                                         <span class="txt">Safety</span>
                                     </a>
                                 </li>
 
-                                <li><hr class="dropdown-divider"></li>
+                                <li class="mob-only-items"><hr class="dropdown-divider"></li>
 
-                                <li>
+                                <li class="mob-only-items">
                                     <a class="dropdown-item" href="#"> 
                                         <span class="ico"><img src="img/subscriptions.svg" alt="subscriptions"></span>
                                         <span class="txt">Subscriptions</span>
                                     </a>
                                 </li>
 
-                                <li>
+                                <li class="mob-only-items">
                                     <a class="dropdown-item" href="#"> 
                                         <span class="ico"><img src="img/wallet.svg" alt="Wallet"></span>
                                         <span class="txt">Wallet</span>
@@ -617,6 +672,26 @@
 
 
          </script>
+
+<script>
+   $(document).ready(function(){
+    $(".tab-links a").click(function(e) {
+        e.preventDefault();
+        
+        var tabId = $(this).attr("href");
+        
+        $(".tab-links li").removeClass("active");
+        $(this).parent().addClass("active");
+        
+        $(".tab").removeClass("active");
+        $(tabId).addClass("active");
+        
+        // Stop event propagation
+        e.stopPropagation();
+    });
+});
+
+</script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     position: relative;
     & > * {
         position: relative;
-        z-index: 2;
+        // z-index: 2;
     }
     .body-bg{
         position: absolute;
@@ -36,6 +36,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media($sm-991){
+            display: none;
+        }
     }
     .navbar-nav{
         display: flex;
@@ -82,6 +86,9 @@
             li{
                 padding-left: 0;
                 padding-right: 0;
+                &.mob-only-items{
+                    display: none;
+                }
                 .dropdown-divider{
                     border-color: rgba(255, 255, 255, 0.2);
                 }
@@ -120,8 +127,25 @@
         }
     }
 
+    .logo-col{
+        @media($sm-991){
+            width: 50%;
+        }
+        @media($sm-579){
+            width: 40%;
+            flex: unset;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
     .actn-col{
         display: flex;
+
+        @media($sm-991){
+            width: 50%;
+        }
         .navbar-nav{
             margin-left: auto;
         }
@@ -135,6 +159,10 @@
     left: 0;
     height: 100vh;
     background-color: rgba(12, 9, 10, 0.4);
+
+    @media($sm-991){
+        display: none;
+    }
     .menu-btn-wrp{
         height: 84px;
         display: flex;
@@ -167,6 +195,143 @@
                 height: 34px;
                 object-fit: contain;
                 border-radius: 40px;
+            }
+        }
+    }
+}
+
+.notification-menu {
+    width: 373px;
+    @media($sm-579){
+        width: 360px;
+    }
+    .title{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+    .top-head{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #FFFFFF14;
+        padding:20px;
+
+    }
+    .tabs{
+        padding: 20px;
+        height: 320px; /* Set the fixed height */
+        overflow: auto; 
+        &::-webkit-scrollbar {
+            width: 1px; /* Set the width of the scrollbar */
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #FFFFFF14
+          
+        }
+        .tab-content .tab {
+            display: none;
+        }
+    }
+    
+    
+    .tab-content
+    {
+        .tab{
+            &.active{
+               
+                    display: block;
+            
+            }
+        }
+    }
+    .tab-links{
+        list-style-type: none;
+        display:flex;
+        padding-inline-start: 0;
+        padding-bottom: 20px;
+        li{
+            margin-right: 20px;
+
+            &:last-child{
+                align-items: end;
+                padding-left: 70px;
+                align-items: end;
+                margin-right: 0;
+
+                @media($sm-579){
+                    padding-left: 53px;
+                }
+            
+            }
+           
+            &.active{
+                a{
+               
+                    color: #060B13;
+                    background-color: #A0FF00;
+                    padding: 6px 18px;
+                    border-radius: 100px;
+                
+            }
+            }
+           
+        }
+        
+    }
+
+    .tab-content{
+        ul{
+            padding-inline-start: 0;
+          
+            li{
+                display: flex;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding-bottom: 20px;
+                color: #ffffff;
+                .dot{
+                    
+                    background: linear-gradient(0deg, #06C270, #06C270),
+                    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                    border: 1px solid #FFFFFF;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 100px;
+                }
+                .img-sec{
+                    img{
+                        width: 32px;
+                        height: 32px;
+                        object-fit: cover;
+                    }
+                }
+
+                .time{
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color:#5C6672;
+                    margin-top: 10px;
+                    display: inline-block;
+                }
+
+               
+
+                .list-item{
+                    padding-left: 10px;
+                }
+                
+
             }
         }
     }
